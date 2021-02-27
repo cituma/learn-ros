@@ -1,0 +1,7 @@
+<launch>
+
+<!-- "type" is executable file name, "name" is string in ros::init -->
+<node name="pcl_create" pkg="pcl_demo" type="pcl_create"/>
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find pcl_demo)/rviz/pcl_create.rviz" required="true" />
+
+</launch>
