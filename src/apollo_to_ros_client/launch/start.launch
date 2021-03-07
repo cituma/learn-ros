@@ -1,0 +1,7 @@
+<launch>
+
+<!-- "type" is executable file name, "name" is string in ros::init -->
+<node name="ros_client" pkg="apollo_to_ros_client" type="ros_client"/>
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find apollo_to_ros_client)/rviz/pcl_create.rviz" required="true" />
+
+</launch>
